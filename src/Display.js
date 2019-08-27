@@ -26,7 +26,7 @@ class Display extends React.Component {
 
     return (
       <div>
-        <pre style={{'font-size': '6px'}}>{decodedData}</pre>
+        <pre style={{'fontSize': '6px'}}>{decodedData}</pre>
         <pre>{hexString}</pre>
       </div>
     );
