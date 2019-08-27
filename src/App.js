@@ -11,7 +11,8 @@ class App extends React.Component {
     super();
     this.state = {
       decoded: {},
-      flipBits: false
+      flipBits: false,
+      error: null
     };
   }
 
@@ -24,7 +25,9 @@ class App extends React.Component {
 
       console.log(decoded);
 
-      this.setState({decoded: decoded});
+      this.setState({decoded: decoded, error: null});
+    }).catch(e => {
+      this.setState({error: e});
     });
   }
 
@@ -34,6 +37,7 @@ class App extends React.Component {
       <div className="App">
         <input type="file" id="input" onChange={this.handleFiles.bind(this)}/>
         <button onClick={() => this.setState({flipBits: !this.state.flipBits})}>Flip Bits: {this.state.flipBits.toString()}</button>
+        <div>{this.state.error ? this.state.error.toString() : ''}</div>
 
 
         <Display decoded={this.state.decoded} flipBits={this.state.flipBits}/>
