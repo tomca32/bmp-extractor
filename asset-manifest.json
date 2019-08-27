@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bmp-extractor/static/css/main.2cce8147.chunk.css",
-    "main.js": "/bmp-extractor/static/js/main.f562f7fc.chunk.js",
-    "main.js.map": "/bmp-extractor/static/js/main.f562f7fc.chunk.js.map",
+    "main.js": "/bmp-extractor/static/js/main.a69e0fb8.chunk.js",
+    "main.js.map": "/bmp-extractor/static/js/main.a69e0fb8.chunk.js.map",
     "runtime~main.js": "/bmp-extractor/static/js/runtime~main.1b4e7ac3.js",
     "runtime~main.js.map": "/bmp-extractor/static/js/runtime~main.1b4e7ac3.js.map",
     "static/js/2.4864937e.chunk.js": "/bmp-extractor/static/js/2.4864937e.chunk.js",
     "static/js/2.4864937e.chunk.js.map": "/bmp-extractor/static/js/2.4864937e.chunk.js.map",
     "index.html": "/bmp-extractor/index.html",
-    "precache-manifest.45eb03a24fa7a4176fa0b833d558a124.js": "/bmp-extractor/precache-manifest.45eb03a24fa7a4176fa0b833d558a124.js",
+    "precache-manifest.97699ae8ba2aa74a34c164ac03a9456e.js": "/bmp-extractor/precache-manifest.97699ae8ba2aa74a34c164ac03a9456e.js",
     "service-worker.js": "/bmp-extractor/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/bmp-extractor/static/css/main.2cce8147.chunk.css.map"
   }
