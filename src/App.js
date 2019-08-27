@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Buffer} from 'buffer';
 import './App.css';
+import bmp from 'bmp-js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Display from './Display';
+
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      decoded: {}
+    };
+  }
+
+  handleFiles(e) {
+    let decoded = {};
+    const file = e.target.files[0];
+    console.log(file);
+    file.arrayBuffer().then(buffer => {
+      decoded = bmp.decode(Buffer.from(buffer));
+
+      console.log(decoded);
+
+      this.setState({decoded: decoded});
+    });
+  }
+
+
+  render() {
+    return (
+      <div className="App">
+        <input type="file" id="input" onChange={this.handleFiles.bind(this)}/>
+
+
+        <Display decoded={this.state.decoded}/>
+      </div>
+    );
+  }
 }
 
 export default App;
