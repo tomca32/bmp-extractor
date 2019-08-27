@@ -28,6 +28,10 @@ class Display extends React.Component {
       <div>
         <pre style={{'fontSize': '6px'}}>{decodedData}</pre>
         <pre>{hexString}</pre>
+        <ul>
+          <li>Width: {this.props.decoded.width}</li>
+          <li>Height: {this.props.decoded.height}</li>
+        </ul>
       </div>
     );
   }
