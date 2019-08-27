@@ -2,6 +2,12 @@ import React from 'react';
 import _chunk from 'lodash/chunk';
 import _sum from 'lodash/sum';
 import _isEmpty from 'lodash/isEmpty';
+import _flatten from 'lodash/flatten';
+
+function flipVertical(data, width) {
+  let chunked = _chunk(data, width * 4);
+  return _flatten([...chunked].reverse());
+}
 
 class Display extends React.Component {
   render() {
@@ -13,6 +19,10 @@ class Display extends React.Component {
     let data = this.props.decoded.data.slice();
     if (this.props.reverse) {
       data = [...data].reverse();
+    }
+
+    if (this.props.flipVertical) {
+      data = flipVertical(data, this.props.decoded.width);
     }
 
     const chunked = _chunk(data, 4);
