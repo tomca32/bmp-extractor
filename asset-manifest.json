@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tomca32/bmp-extractor/static/css/main.2cce8147.chunk.css",
-    "main.js": "/tomca32/bmp-extractor/static/js/main.5f7a6792.chunk.js",
-    "main.js.map": "/tomca32/bmp-extractor/static/js/main.5f7a6792.chunk.js.map",
-    "runtime~main.js": "/tomca32/bmp-extractor/static/js/runtime~main.918e84e9.js",
-    "runtime~main.js.map": "/tomca32/bmp-extractor/static/js/runtime~main.918e84e9.js.map",
-    "static/js/2.4864937e.chunk.js": "/tomca32/bmp-extractor/static/js/2.4864937e.chunk.js",
-    "static/js/2.4864937e.chunk.js.map": "/tomca32/bmp-extractor/static/js/2.4864937e.chunk.js.map",
-    "index.html": "/tomca32/bmp-extractor/index.html",
-    "precache-manifest.2dc55d84392e1a3331e986a75118cedf.js": "/tomca32/bmp-extractor/precache-manifest.2dc55d84392e1a3331e986a75118cedf.js",
-    "service-worker.js": "/tomca32/bmp-extractor/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/tomca32/bmp-extractor/static/css/main.2cce8147.chunk.css.map"
+    "main.css": "/bmp-extractor/static/css/main.2cce8147.chunk.css",
+    "main.js": "/bmp-extractor/static/js/main.f562f7fc.chunk.js",
+    "main.js.map": "/bmp-extractor/static/js/main.f562f7fc.chunk.js.map",
+    "runtime~main.js": "/bmp-extractor/static/js/runtime~main.1b4e7ac3.js",
+    "runtime~main.js.map": "/bmp-extractor/static/js/runtime~main.1b4e7ac3.js.map",
+    "static/js/2.4864937e.chunk.js": "/bmp-extractor/static/js/2.4864937e.chunk.js",
+    "static/js/2.4864937e.chunk.js.map": "/bmp-extractor/static/js/2.4864937e.chunk.js.map",
+    "index.html": "/bmp-extractor/index.html",
+    "precache-manifest.45eb03a24fa7a4176fa0b833d558a124.js": "/bmp-extractor/precache-manifest.45eb03a24fa7a4176fa0b833d558a124.js",
+    "service-worker.js": "/bmp-extractor/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/bmp-extractor/static/css/main.2cce8147.chunk.css.map"
   }
 }
