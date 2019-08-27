@@ -41,7 +41,7 @@ class Display extends React.Component {
 
     console.log(byteData);
 
-    const hexData = byteData.map(byte => parseInt(byte.join(''), 2)).map(e => e.toString(16).padStart(2, '0'));
+    const hexData = byteData.map(byte => parseInt(byte.join(''), 2)).map(e => e.toString(16).toUpperCase().padStart(2, '0'));
 
     const hexRegex = new RegExp(`.{${this.props.decoded.width / 4}}`, 'g');
     const hexString = hexData.join('').replace(hexRegex, (match) => `${match}\n`);
