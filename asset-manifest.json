@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bmp-extractor/static/css/main.2cce8147.chunk.css",
-    "main.js": "/bmp-extractor/static/js/main.cd4c653a.chunk.js",
-    "main.js.map": "/bmp-extractor/static/js/main.cd4c653a.chunk.js.map",
+    "main.js": "/bmp-extractor/static/js/main.fc202c32.chunk.js",
+    "main.js.map": "/bmp-extractor/static/js/main.fc202c32.chunk.js.map",
     "runtime~main.js": "/bmp-extractor/static/js/runtime~main.1b4e7ac3.js",
     "runtime~main.js.map": "/bmp-extractor/static/js/runtime~main.1b4e7ac3.js.map",
-    "static/js/2.5a0068e1.chunk.js": "/bmp-extractor/static/js/2.5a0068e1.chunk.js",
-    "static/js/2.5a0068e1.chunk.js.map": "/bmp-extractor/static/js/2.5a0068e1.chunk.js.map",
+    "static/js/2.3bef1b64.chunk.js": "/bmp-extractor/static/js/2.3bef1b64.chunk.js",
+    "static/js/2.3bef1b64.chunk.js.map": "/bmp-extractor/static/js/2.3bef1b64.chunk.js.map",
     "index.html": "/bmp-extractor/index.html",
-    "precache-manifest.036462e87a70050334331134b10dbf05.js": "/bmp-extractor/precache-manifest.036462e87a70050334331134b10dbf05.js",
+    "precache-manifest.5c798d934a6710277bc80ed6d14a44d1.js": "/bmp-extractor/precache-manifest.5c798d934a6710277bc80ed6d14a44d1.js",
     "service-worker.js": "/bmp-extractor/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/bmp-extractor/static/css/main.2cce8147.chunk.css.map"
   }
