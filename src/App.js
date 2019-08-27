@@ -10,7 +10,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      decoded: {}
+      decoded: {},
+      flipBits: false
     };
   }
 
@@ -32,9 +33,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <input type="file" id="input" onChange={this.handleFiles.bind(this)}/>
+        <button onClick={() => this.setState({flipBits: !this.state.flipBits})}>Flip Bits: {this.state.flipBits.toString()}</button>
 
 
-        <Display decoded={this.state.decoded}/>
+        <Display decoded={this.state.decoded} flipBits={this.state.flipBits}/>
       </div>
     );
   }

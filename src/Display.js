@@ -10,7 +10,13 @@ class Display extends React.Component {
     }
 
     const chunked = _chunk(this.props.decoded.data, 4);
-    const result = chunked.map(e => _sum(e) === 0 ? 0 : 1);
+    const result = chunked.map(e => {
+      let bit = _sum(e) === 0 ? 0 : 1;
+      if (this.props.flipBits) {
+        bit = bit === 0 ? 1 : 0;
+      }
+      return bit;
+    });
     const binaryRegex = new RegExp(`.{${this.props.decoded.width}}`, 'g');
     console.log(this.props.decoded.width, binaryRegex);
     const decodedData = result.join('').replace(binaryRegex, (match) => {return `${match}\n`;});
