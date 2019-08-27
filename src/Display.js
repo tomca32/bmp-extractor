@@ -9,7 +9,13 @@ class Display extends React.Component {
       return <div />;
     }
 
-    const chunked = _chunk(this.props.decoded.data, 4);
+
+    let data = this.props.decoded.data.slice();
+    if (this.props.reverse) {
+      data = [...data].reverse();
+    }
+
+    const chunked = _chunk(data, 4);
     const result = chunked.map(e => {
       let bit = _sum(e) === 0 ? 0 : 1;
       if (this.props.flipBits) {

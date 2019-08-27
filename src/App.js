@@ -12,6 +12,7 @@ class App extends React.Component {
     this.state = {
       decoded: {},
       flipBits: false,
+      reverse: false,
       error: null
     };
   }
@@ -37,10 +38,11 @@ class App extends React.Component {
       <div className="App">
         <input type="file" id="input" onChange={this.handleFiles.bind(this)}/>
         <button onClick={() => this.setState({flipBits: !this.state.flipBits})}>Flip Bits: {this.state.flipBits.toString()}</button>
+        <button onClick={() => this.setState({reverse: !this.state.reverse})}>Reverse: {this.state.reverse.toString()}</button>
         <div>{this.state.error ? this.state.error.toString() : ''}</div>
 
 
-        <Display decoded={this.state.decoded} flipBits={this.state.flipBits}/>
+        <Display decoded={this.state.decoded} flipBits={this.state.flipBits} reverse={this.state.reverse}/>
       </div>
     );
   }
